@@ -1,6 +1,8 @@
 import os
 import telebot
 from telebot import types
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 
 TOKEN = os.environ['TOKEN']
 OWNER_NAME = os.environ['OWNER_NAME']
